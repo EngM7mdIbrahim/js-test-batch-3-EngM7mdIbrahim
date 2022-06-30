@@ -1,34 +1,56 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sneakers Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body onload="setup()">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="setup()">
     <script src="main.js"></script>
     <div class="toolbar-container">
-        <div class="toolbar">
-            <img src="./images/logo.svg" alt="" id="logo">
-            <div class="toolbar-options">
-                <div class="toolbar-option">Collections</div>
-                <div class="toolbar-option">Men</div>
-                <div class="toolbar-option">Women</div>
-                <div class="toolbar-option">About</div>
-                <div class="toolbar-option">Contact</div>
-            </div>
-            <div class="cart-container">
-                <img src="./images/icon-cart.svg" alt="" id="cart">
-                <div class="cart-counter">
-                    <p>0</p>
-                </div>
-            </div>
-            <img src="./images/image-avatar.png" alt="" id="avatar">
+      <div class="toolbar">
+        <img src="./images/logo.svg" alt="" id="logo" />
+        <div class="toolbar-options">
+          <div class="toolbar-option">Collections</div>
+          <div class="toolbar-option">Men</div>
+          <div class="toolbar-option">Women</div>
+          <div class="toolbar-option">About</div>
+          <div class="toolbar-option">Contact</div>
         </div>
-        <hr>
+        <div class="cart-container">
+          <img src="./images/icon-cart.svg" alt="" id="cart" />
+          <div class="details-containercart-counter">
+            <p>0</p>
+          </div>
+        </div>
+        <img src="./images/image-avatar.png" alt="" id="avatar" />
+      </div>
+      <hr />
     </div>
-    
-    
-</body>
+    <div class="body-container">
+      <div id="image-slider-container" class="container">
+        <img id="main-img" src="./images/image-product-1.jpg" alt="" />
+      </div>
+      <div class="container" id="details-container">
+        <h3>Sneakers Company</h3>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featurin a durable rubber outer sole, they'll withstand everything the
+          weather can offer.
+        </p>
+        <h2>$125 <span id="discount">50%</span></h2>
+        <p id="prev-price">$250</p>
+        <div class="item-controls">
+          <img src="./images/icon-plus.svg" alt="" id="plus" />
+            <h2 id="count">0</h2>
+          <img src="./images/icon-minus.svg" alt="" id="minus" />
+          <div class="add-card-btn">
+            <img src="./images/icon-" alt="" id="cart" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
