@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 20px;
+  background-color: white;
+}
+img {
+  object-fit: cover;
+}
+
+hr {
+  background-color: hsl(220, 14%, 75%);
+  border: none;
+  width: 50%;
+  height: 2px;
+  margin-left: 20px;
+}
+.toolbar-container {
+  display: flex;
+  width: 80%;
+  min-width: 700px;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+.toolbar {
+  width: 100%;
+  display: flex;
+  padding: 0px 20px;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-bottom: 0px;
+}
+
+.toolbar-options {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.toolbar-option {
+  padding-bottom: 100px;
+  margin: 0px 15px;
+  transition: all 100ms ease;
+}
+.toolbar-option:hover {
+  border-bottom: 5px solid hsl(26, 100%, 55%);
+  cursor: pointer;
+  transition: all 100ms ease;
+}
+
+#logo {
+  width: 100px;
+  align-self: flex-start;
+  margin-top: 2px;
+}
+
+#avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  border: 3px solid hsl(26, 100%, 55%);
+}
+
+#cart {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.cart-container {
+  margin-top: 10px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease;
+}
+
+.cart-container:hover {
+  background-color: rgb(206, 206, 206);
+  transition: all 200ms ease;
+}
+
+.cart-counter {
+  position: absolute;
+  padding: 1px 7px;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  border-radius: 30%;
+  top: 7px;
+  right: 7px;
+}
+
+.cart-counter p {
+  font-size: 10px;
+}
