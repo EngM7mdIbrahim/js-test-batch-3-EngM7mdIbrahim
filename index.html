@@ -18,10 +18,10 @@
           <div class="toolbar-option">About</div>
           <div class="toolbar-option">Contact</div>
         </div>
-        <div class="cart-container">
+        <div onclick="showCartMenu()" class="cart-container">
           <img src="./images/icon-cart.svg" alt="" id="cart" />
-          <div class="details-containercart-counter">
-            <p>0</p>
+          <div class="details-container cart-counter">
+            <p id="cart-count-text">0</p>
           </div>
         </div>
         <img src="./images/image-avatar.png" alt="" id="avatar" />
@@ -29,6 +29,20 @@
       <hr />
     </div>
     <div class="body-container">
+      <div class="cart-menu">
+        <h2>Cart</h2>
+        <div class="cart-menu-item">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="">
+          <div class="cart-item-details">
+            <p>Fall Limited Edition Sneakers</p>
+            <p id="cart-menu-price">$125  x 3 <span id="totalprice">$375.00</span></p>
+          </div>
+        </div>
+        <div class="cart-emtpy-menu">
+          <h3>Your cart is empty!</h3>
+        </div>
+        <button id="checkout">Checkout</button>
+      </div>
       <div id="image-slider-container" class="container">
         <img id="main-img" src="./images/image-product-1.jpg" alt="" />
       </div>
@@ -43,11 +57,14 @@
         <h2>$125 <span id="discount">50%</span></h2>
         <p id="prev-price">$250</p>
         <div class="item-controls">
-          <img src="./images/icon-plus.svg" alt="" id="plus" />
+          <div class="item-counter">
+            <img onclick="setItemCount(1)" src="./images/icon-plus.svg" alt="" id="plus" />
             <h2 id="count">0</h2>
-          <img src="./images/icon-minus.svg" alt="" id="minus" />
+          <img onclick="setItemCount(-1)" src="./images/icon-minus.svg" alt="" id="minus" />
+          </div>
           <div class="add-card-btn">
-            <img src="./images/icon-" alt="" id="cart" />
+            <img src="./images/icon-cart.svg" alt="" />
+            <h3>Add to Button</h3>
           </div>
         </div>
       </div>

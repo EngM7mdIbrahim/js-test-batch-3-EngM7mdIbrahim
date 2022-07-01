@@ -81,7 +81,6 @@ hr {
   width: 70px;
   height: 70px;
   border-radius: 40px;
-  border: 3px solid hsl(26, 100%, 55%);
 }
 
 #cart {
@@ -130,7 +129,6 @@ hr {
   gap: 20px;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  border: 2px solid green;
 }
 
 .container{
@@ -142,7 +140,6 @@ hr {
   align-items: center;
   padding: 20px;
   gap: 20px;
-  border: 2px solid red;
 }
 
 #main-img{
@@ -168,7 +165,6 @@ hr {
 
 h3{
   margin-top: 50px;
-  border: 2px solid black;
   color: hsl(26, 100%, 55%);
   text-transform: uppercase;
 }
@@ -223,9 +219,118 @@ p{
 
 .add-card-btn{
   display: flex;
+  flex: 1;
   background-color: hsl(26, 100%, 55%);
   border-radius: 5px;
   color: white;
   justify-content: center;
   align-items: center;
+  padding: 10px 15px;
+  gap: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.add-card-btn img{
+  width: 20px;
+  height: 20px;
+}
+
+.add-card-btn h3{
+  color: white;
+  margin: auto 0;
+  
+}
+
+.cart-menu h3{
+  color: hsl(219, 9%, 45%);
+  margin: auto 0;
+  font-weight: 700;
+  
+}
+
+.item-counter{
+  display: flex;
+  padding: 10px 15px;
+  gap: 20px;
+  background-color: hsl(223, 64%, 98%);
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-menu{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  width: 400px;
+  background-color: hsl(223, 64%, 98%);
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cart-menu h2{
+  padding: 10px 10px;
+  border-bottom: 2px solid hsl(220, 14%, 75%);
+}
+
+.cart-emtpy-menu{
+  
+  display: none;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-menu-item{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 10px;
+  align-items: center;
+}
+.cart-menu-item img{
+  display: flex;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+  
+}
+
+.cart-item-details{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#checkout{
+  display: flex;
+  flex: 1;
+  border: none;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 5px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+#totalprice{
+  font-weight: 700;
+  
+}
+
+@media screen and (max-width: 375px){
+  .toolbar-options{
+    display: none;
+  }
+  #logo{
+    display: flex;
+  }
 }
